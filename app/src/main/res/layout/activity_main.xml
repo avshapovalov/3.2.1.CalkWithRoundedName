@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/display_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/calculator_layout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:text="@string/calk_default"
+            android:textColor="@color/colorWhite"
+            android:textSize="33dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="60"
+        app:layout_constraintCircleRadius="200dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/display_layout">
+
+        <TextView
+            android:id="@+id/sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SH"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="80"
+        app:layout_constraintCircleRadius="175dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/display_layout">
+
+        <TextView
+            android:id="@+id/A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="105"
+        app:layout_constraintCircleRadius="170dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/display_layout">
+
+        <TextView
+            android:id="@+id/P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/P"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="135"
+        app:layout_constraintCircleRadius="185dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/display_layout">
+
+        <TextView
+            android:id="@+id/O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/O"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="155"
+        app:layout_constraintCircleRadius="155dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/calculator_layout">
+
+        <TextView
+            android:id="@+id/V"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/V"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="145dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/calculator_layout">
+
+        <TextView
+            android:id="@+id/A2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="205"
+        app:layout_constraintCircleRadius="163dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/calculator_layout">
+
+        <TextView
+            android:id="@+id/L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/L"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="220"
+        app:layout_constraintCircleRadius="197dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/calculator_layout">
+
+        <TextView
+            android:id="@+id/O2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/O"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@+id/calculator_layout"
+        app:layout_constraintCircleAngle="230"
+        app:layout_constraintCircleRadius="230dp"
+        app:layout_constraintLeft_toRightOf="@id/calculator_layout"
+        app:layout_constraintTop_toBottomOf="@id/calculator_layout">
+
+        <TextView
+            android:id="@+id/V2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/V"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/calculator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/display_layout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/btn_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/calculator_layout" />
+
+        <Button
+            android:id="@+id/btn_change_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_sign"
+            app:layout_constraintLeft_toRightOf="@id/btn_C"
+            app:layout_constraintTop_toTopOf="@id/calculator_layout" />
+
+        <Button
+            android:id="@+id/btn_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/percent"
+            app:layout_constraintLeft_toRightOf="@id/btn_change_sign"
+            app:layout_constraintTop_toTopOf="@id/calculator_layout" />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_C" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2"
+            app:layout_constraintLeft_toRightOf="@id/btn_1"
+            app:layout_constraintTop_toBottomOf="@id/btn_C" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3"
+            app:layout_constraintLeft_toRightOf="@id/btn_2"
+            app:layout_constraintTop_toBottomOf="@id/btn_C" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_1" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5"
+            app:layout_constraintLeft_toRightOf="@id/btn_4"
+            app:layout_constraintTop_toBottomOf="@id/btn_2" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_6"
+            app:layout_constraintLeft_toRightOf="@id/btn_5"
+            app:layout_constraintTop_toBottomOf="@id/btn_3" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_4" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_8"
+            app:layout_constraintLeft_toRightOf="@id/btn_7"
+            app:layout_constraintTop_toBottomOf="@id/btn_5" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_9"
+            app:layout_constraintLeft_toRightOf="@id/btn_8"
+            app:layout_constraintTop_toBottomOf="@id/btn_6" />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_7" />
+
+        <Button
+            android:id="@+id/btn_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/point"
+            app:layout_constraintLeft_toRightOf="@id/btn_0"
+            app:layout_constraintTop_toBottomOf="@id/btn_8" />
+
+        <Button
+            android:id="@+id/btn_X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x"
+            app:layout_constraintLeft_toRightOf="@id/btn_percent"
+            app:layout_constraintTop_toTopOf="@id/calculator_layout" />
+
+        <Button
+            android:id="@+id/btn_div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slash"
+            app:layout_constraintLeft_toRightOf="@id/btn_3"
+            app:layout_constraintTop_toBottomOf="@id/btn_X" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            app:layout_constraintLeft_toRightOf="@id/btn_6"
+            app:layout_constraintTop_toBottomOf="@id/btn_div" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:text="@string/minus"
+            app:layout_constraintLeft_toRightOf="@id/btn_9"
+            app:layout_constraintTop_toBottomOf="@id/btn_plus" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equal"
+            app:layout_constraintLeft_toRightOf="@id/btn_point"
+            app:layout_constraintTop_toBottomOf="@id/btn_9" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
